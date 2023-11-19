@@ -380,7 +380,6 @@ uint8_t PCA9685::I2cReadReg(uint8_t reg)
 
 	/* //I2cSetup(); */
 	uint8_t data = wiringPiI2CReadReg8(fd, reg);
-	std::cout << "reading: " << int(data) << "\n";
 	return data;
 	/* FUNC_PREFIX(i2c_write(&data, 1)); */
 	/* FUNC_PREFIX(i2c_read(&data, 1)); */
